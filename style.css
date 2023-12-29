@@ -373,6 +373,14 @@ button:focus {
     margin-top: 20px;
 }
 
+.slider_text h3 .typed{
+    color: #fff;
+    /* font-size: 90px;
+    font-weight: 600; */
+    line-height: 1;
+    margin-top: 20px;
+}
+
 .hero-content h3 {
     /* position: relative;
     align-content: center; */
