@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Abir HASSINI | Portfolio</title>
     <link rel="icon" href="assets/images/icon/favicon.ico" type="image/x-icon">
 
@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&amp;family=Press+Start+2P&amp;display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <!-- ====== ALL CSS ====== -->
@@ -23,13 +25,14 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="assets/css/style1.scss">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav">
 
+    
     <!-- Preloader -->
     <div class="preloader">
         <div class="spinner">
@@ -41,7 +44,10 @@
 
 
     <!-- ====== Header ====== -->
-    <header id="header" class="header">
+    <header id="header" class="header" 
+    style="background-image:url(assets/images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+
+        <div class="overlay"></div>
         <!-- ====== Navbar ====== -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
@@ -73,17 +79,41 @@
             </div>
         </nav>
         <!-- ====== // Navbar ====== -->
+        <div class="row">
+            <div class="col-md-12 col-md-offset-2 text-center">
+                <div class="display-t js-fullheight">
+                    <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                        <!-- <div class="profile-thumb" style="background: url(images/user-3.jpg);"></div> -->
+
+                        <h1><span>Abir Hassini</span></h1>
+                        <h3><span>Software Engineer / ML enthusiast</span></h3>
+                        <p>
+                        <ul class="fh5co-social-icons">
+
+                            <li><a href="https://github.com/abir9hassini" target="_blank"
+                                    rel="noreferrer nofollow"><i class="fab fa-github fa-2xl"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/abir-hassini-4064b8124/" target="_blank"
+                                    rel="noreferrer nofollow"><i class="icon-linkedin2"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter2"></i></a></li>
+
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- ====== // Header ====== -->
-
+    
     <!-- ====== Hero Area ====== -->
-    <div class="slider_area" id="home">
-        <div class="single_slider  d-flex align-items-center slider_bg_1">
+    <!-- <div class="slider_area" id="home">
+        <div class="single_slider  d-flex align-items-center slider_bg_1"> -->
             <!-- <div class="shap_pattern d-none d-lg-block">
                 <img src="img/about/grid.png" alt="">
             </div> -->
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
@@ -94,13 +124,52 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ====== //Hero Area ====== -->
 
 
 
     <!-- ====== About Area ====== -->
-    
+    <div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<!-- <ul class="info">
+							<li><span class="first-block">Full Name:</span><span class="second-block">Louie Jie Mahusay</span></li>
+							<li><span class="first-block">Phone:</span><span class="second-block">+ 1235 2355 98</span></li>
+							<li><span class="first-block">Email:</span><span class="second-block">info@yoursite.com</span></li>
+							<li><span class="first-block">Website:</span><span class="second-block">www.yoursite.com</span></li>
+							<li><span class="first-block">Address:</span><span class="second-block">198 West 21th Street, Suite 721 New York NY 10016</span></li>
+						</ul> -->
+
+				</div>
+				<div class="col-md-8">
+					<h2>Hello There! 👋</h2>
+					<p>There live the blind texts far from the countries Vokalia and Consonantia, there live the blind
+						texts. Separated they live in bookmarksgrove there live the blind texts far from the countries.
+					</p>
+					<p>Far far away, behind the word mountains, Quos quia provident consequuntur culpa facere ratione
+						maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci
+						there live the blind texts from the countries Vokalia and Consonantia, there live the blind
+						texts. Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id
+						repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					<!-- <p>
+							<ul class="fh5co-social-icons">
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-facebook3"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+							</ul>
+						</p> -->
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- ====== // About Area ====== -->
 
 
@@ -764,7 +833,8 @@
                 <div class="col-lg-6 ">
                     <div class="section-title text-center">
                         <h2>Medium Posts</h2>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                        <p> find immense joy in crafting articles on Medium, allowing me to share my passions and knowledge with a wider audience.
+                            Feel free to visit it 🤗.</p>
                     </div>
                 </div>
             </div>
