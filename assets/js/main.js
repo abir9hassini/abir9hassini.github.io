@@ -1,7 +1,8 @@
 (function ($) {
-    "use strict";
-    
-    var isMobile = {
+	
+	'use strict';
+
+	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
 		},
@@ -21,8 +22,9 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-    
-    var fullHeight = function() {
+
+	
+	var fullHeight = function() {
 
 		if ( !isMobile.any() ) {
 			$('.js-fullheight').css('height', $(window).height());
@@ -32,7 +34,7 @@
 		}
 	};
 
-    // Parallax
+	// Parallax
 	var parallax = function() {
 		$(window).stellar();
 	};
@@ -73,15 +75,82 @@
 		} , { offset: '85%' } );
 	};
 
-    
 
 
-    /*:::::::::::::::::::::::::::::::::::
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+
+	var pieChart = function() {
+		$('.chart').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#FF9000',
+			trackColor:	"#f5f5f5",
+			size: 160,
+			animate: 1000
+		});
+	};
+
+	var skillsWayPoint = function() {
+		if ($('#fh5co-skills').length > 0 ) {
+			$('#fh5co-skills').waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+					setTimeout( pieChart , 400);					
+					$(this.element).addClass('animated');
+				}
+			} , { offset: '90%' } );
+		}
+
+	};
+
+
+	// Loading page
+	var loaderPage = function() {
+		$(".fh5co-loader").fadeOut("slow");
+	};
+
+	
+	$(function(){
+		contentWayPoint();
+		goToTop();
+		loaderPage();
+		fullHeight();
+		parallax();
+		// pieChart();
+		skillsWayPoint();
+	});
+	
+	/*:::::::::::::::::::::::::::::::::::
             Navbar Area
     :::::::::::::::::::::::::::::::::::*/
 
      // Navbar Sticky
-    $(window).scroll(function () {
+	 $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 1) {
@@ -91,8 +160,7 @@
         }
     });
 
-
-    //Smoth Scroll
+	//Smoth Scroll
     $(function () {
         $('.nav-link, .smoth-scroll').on('click', function (event) {
             var $anchor = $(this);
@@ -103,7 +171,14 @@
         });
     });
 
-    /*==========================
+	/*::::::::::::::::::::::::::::::::::::
+		Preloader
+    ::::::::::::::::::::::::::::::::::::*/
+	$(window).on('load', function () {
+		$('.preloader').fadeOut();
+	});
+
+	/*==========================
         Hero Area Slider
     ============================*/
 
@@ -133,7 +208,20 @@
         });
     });
 
-    /*::::::::::::::::::::::::::::::::::::
+	/*::::::::::::::::::::::::::::::::::::
+       Testimonial Section
+    ::::::::::::::::::::::::::::::::::::*/
+
+    $('.testimonials').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        dots: false
+    });
+
+	/*::::::::::::::::::::::::::::::::::::
        Portfolio Section
     ::::::::::::::::::::::::::::::::::::*/
 
@@ -169,62 +257,5 @@
     
     });
 
-    
-
-
-    /*::::::::::::::::::::::::::::::::::::
-       Testimonial Section
-    ::::::::::::::::::::::::::::::::::::*/
-
-    $('.testimonials').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        nav: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: false
-    });
-
-
-    /*::::::::::::::::::::::::::::::::::::
-       Contact Area 
-    ::::::::::::::::::::::::::::::::::::*/
-    var form = $('#contact-form');
-
-    var formMessages = $('.form-message');
-    $(form).submit(function (e) {
-        e.preventDefault();
-        var formData = $(form).serialize();
-        $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            })
-            .done(function (response) {
-                $(formMessages).removeClass('error');
-                $(formMessages).addClass('success');
-                $(formMessages).text(response);
-
-                $('#contact-form input,#contact-form textarea').val('');
-            })
-            .fail(function (data) {
-                $(formMessages).removeClass('success');
-                $(formMessages).addClass('error');
-
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                }
-            });
-    });
-    
-    
-    /*::::::::::::::::::::::::::::::::::::
-    Preloader
-    ::::::::::::::::::::::::::::::::::::*/
-    $(window).on('load', function () {
-        $('.preloader').fadeOut();
-    });
 
 }(jQuery));
