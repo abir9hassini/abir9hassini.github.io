@@ -103,36 +103,36 @@
 	
 	};
 
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 4,
-			lineCap: 'butt',
-			barColor: '#FF9000',
-			trackColor:	"#f5f5f5",
-			size: 160,
-			animate: 1000
-		});
-	};
+	// var pieChart = function() {
+	// 	$('.chart').easyPieChart({
+	// 		scaleColor: false,
+	// 		lineWidth: 4,
+	// 		lineCap: 'butt',
+	// 		barColor: '#FF9000',
+	// 		trackColor:	"#f5f5f5",
+	// 		size: 160,
+	// 		animate: 1000
+	// 	});
+	// };
 
-	var skillsWayPoint = function() {
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
+	// var skillsWayPoint = function() {
+	// 	if ($('#fh5co-skills').length > 0 ) {
+	// 		$('#fh5co-skills').waypoint( function( direction ) {
 										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( pieChart , 400);					
-					$(this.element).addClass('animated');
-				}
-			} , { offset: '90%' } );
-		}
+	// 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+	// 				setTimeout( pieChart , 400);					
+	// 				$(this.element).addClass('animated');
+	// 			}
+	// 		} , { offset: '90%' } );
+	// 	}
 
-	};
+	// };
 
 
 	// Loading page
-	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
-	};
+	// var loaderPage = function() {
+	// 	$(".preloader").fadeOut("slow");
+	// };
 
 	
 	$(function(){
@@ -142,7 +142,7 @@
 		fullHeight();
 		parallax();
 		// pieChart();
-		skillsWayPoint();
+		//skillsWayPoint();
 	});
 	
 	/*:::::::::::::::::::::::::::::::::::
@@ -192,7 +192,7 @@
         animateIn: 'fadeIn'
 
     });
-    //Wow Animation
+    // //Wow Animation
     new WOW().init();
     /*==========================
         Hero Title typer
@@ -224,8 +224,27 @@
 	/*::::::::::::::::::::::::::::::::::::
        Portfolio Section
     ::::::::::::::::::::::::::::::::::::*/
+	// Select relevant HTML elements
+	// const filterButtons = document.querySelectorAll("#filter-buttons button");
+	// const filterableCards = document.querySelectorAll("#filterable-cards .single-project");
 
-    lightbox.option({
+	// // Function to filter cards based on filter buttons
+	// const filterCards = (e) => {
+	// 	document.querySelector("#filter-buttons .active").classList.remove("active");
+	// 	e.target.classList.add("active");
+		
+	// 	filterableCards.forEach(card => {
+	// 		// show the card if it matches the clicked filter or show all cards if "all" filter is clicked
+	// 		if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+	// 			return card.classList.replace("hide", "show");
+	// 		}
+	// 		card.classList.add("hide");
+	// 	});
+	// }
+
+	// filterButtons.forEach(button => button.addEventListener("click", filterCards));
+    
+	 lightbox.option({
         'imageFadeDuration': 800,
         'resizeDuration': 500,
         'wrapAround': true
