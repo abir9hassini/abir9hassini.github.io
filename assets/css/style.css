@@ -40,7 +40,7 @@ body {
 
 .navbar-expand-lg .navbar-nav .nav-link:hover,
 .navbar-expand-lg .navbar-nav .nav-link.active {
-    color: rgb(223, 74, 161);
+    color: rgb(170,0,254);
 }
 
 #page {
@@ -71,13 +71,13 @@ body {
 }
 
 a {
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
   outline: none;
   text-decoration: none;
 }
@@ -95,17 +95,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 
 ::selection {
   color: #fff;
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 
 #fh5co-header,
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(223, 74, 161, 0.9);
+  background: rgba(170, 0, 254, 0.9);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6, figure {
   /* color:#3e3e3e; */
 } 
 #fh5co-contact {
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 
 #fh5co-skills h2{
@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: rgb(223, 74, 161) !important;
+  color: rgb(170,0,254) !important;
 }
 #fh5co-skills .feature-left .feature-copy {
   width: 100%;
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -441,7 +441,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
 }
 
 .fh5co-heading {
@@ -571,7 +571,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -757,7 +757,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .cube1,
 .cube2 {
-  background-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -843,7 +843,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .section-title h2:before {
   left: auto;
   right: 50%;
-  background-color: rgb(223, 74, 161)
+  background-color: rgb(170,0,254)
 }
 
 .section-title p {
@@ -865,7 +865,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .single-why-me:hover .why-me-icon {
   background-color: #fff;
-  /* color: rgb(223, 74, 161); */
+  /* color: rgb(170,0,254); */
 }
 
 .why-me-right .why-me-icon,
@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   display: inline-block;
   background-color:#fff;
-  /* background-color: rgb(223, 74, 161); */
+  /* background-color: rgb(170,0,254); */
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -937,8 +937,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .work-list ul li.filter.active,
 .work-list ul li:hover {
   color: #000;
-  background-color: rgb(223, 74, 161);
-  border-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
+  border-color: rgb(170,0,254);
 }
 
 .row.portfolio .col-lg-4 {
@@ -1068,7 +1068,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .projects-area:before {
-  background-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
   position: absolute;
   content: '';
   width: 100%;
@@ -1084,7 +1084,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .single-projects {
   background-color: #fff;
   padding: 15px;
-  border: 1px solid rgb(223, 74, 161);
+  border: 1px solid rgb(170,0,254);
   -webkit-transition: .3s;
   transition: .3s;
   margin-bottom: 30px;
@@ -1135,7 +1135,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .projects-icon {
   font-size: 50px;
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1195,7 +1195,7 @@ h4.project-title a {
   
 }
 .project-links a:hover{
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
 }
 
 .project-meta a {
@@ -1214,8 +1214,8 @@ h4.project-title a {
 }
 
 .single-project .button:hover {
-  background-color: rgb(223, 74, 161);
-  border-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
+  border-color: rgb(170,0,254);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1260,8 +1260,8 @@ h4.project-title a {
 }
 
 .button.project-btn:hover {
-  background-color: rgb(223, 74, 161);
-  border-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
+  border-color: rgb(170,0,254);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1343,7 +1343,7 @@ h4.project-title a {
 
 .single-why-me:hover .why-me-icon {
   background-color: #fff;
-  /* color: rgb(223, 74, 161); */
+  /* color: rgb(170,0,254); */
 }
 
 .why-me-right .why-me-icon,
@@ -1360,7 +1360,7 @@ h4.project-title a {
   bottom: 0;
   display: inline-block;
   background-color:#fff;
-  /* background-color: rgb(223, 74, 161); */
+  /* background-color: rgb(170,0,254); */
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -1498,7 +1498,7 @@ h4.project-title a {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1809,9 +1809,9 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
   color: #fff;
-  border: 2px solid rgb(223, 74, 161);
+  border: 2px solid rgb(170,0,254);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #ff9b1a !important;
@@ -1819,11 +1819,11 @@ input[type="text"] {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: rgb(223, 74, 161);
-  border: 2px solid rgb(223, 74, 161);
+  color: rgb(170,0,254);
+  border: 2px solid rgb(170,0,254);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: rgb(223, 74, 161);
+  background: rgb(170,0,254);
   color: #fff;
 }
 
@@ -1953,7 +1953,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: rgb(223, 74, 161);
+  border-color: rgb(170,0,254);
 }
 
 .row-pb-md {
@@ -1998,7 +1998,7 @@ input[type="text"] {
 /* .section-padding h2:before {
   left: auto;
   right: 50%;
-  background-color: rgb(223, 74, 161)
+  background-color: rgb(170,0,254)
 } */
 .border-gray-custom {
   --tw-border-opacity: 1;
@@ -2051,7 +2051,7 @@ input[type="text"] {
 }
 
 .section-title.Book-title h2:before {
-  background-color: rgb(223, 74, 161);
+  background-color: rgb(170,0,254);
 }
 
 .book-bg {
@@ -2107,7 +2107,7 @@ input[type="text"] {
 .footer-area {
   padding: 8px;
   background-color: #000;
-  border-bottom: 5px solid rgb(223, 74, 161);
+  border-bottom: 5px solid rgb(170,0,254);
 }
 .copyright-text{
   margin-top: 30px;
@@ -2122,7 +2122,7 @@ input[type="text"] {
 }
 
 .copyright-text a:hover {
-  color: rgb(223, 74, 161);
+  color: rgb(170,0,254);
 }
 .js .animate-box {
   opacity: 0;
